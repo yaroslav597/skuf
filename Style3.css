@@ -1,0 +1,76 @@
+<h3 id="practices">Практики</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Тема</th>
+                        <th>Посещение</th>
+                        <th>Выполнение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Формы и кнопки в HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Таблицы и интерактивные элементы HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Основы работы с CSS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Работа с классами в CSS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Работа с сетками и разметкой в HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Адаптивная вёрстка</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Bootstrap</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 id="university-address">Адрес вуза</h3>
+            <p>119454, город Москва, пр-кт Вернадского, д. 78.</p>
+
+            <h3 id="map">Яндекс карта</h3>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f730b2f072adc0323774829c74204e72b3ed9511ee3b75cb887d8b71076965f&amp;source=constructor" style="width: 100%" height="400"></iframe>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; Пестов Ярослав Алексеевич 2024</p>
+    </footer>
+
+</body>
+</html>

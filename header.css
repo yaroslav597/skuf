@@ -1,0 +1,52 @@
+/* Стили для шапки */
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 1em; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 20px; /* Отступ снизу */
+  }
+  
+  #top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  /* Стили для информации о группе */
+  .group-info {
+    text-align: right; 
+  }
+  
+  /* Стили для навигации */
+  nav { 
+    background-color: #444; 
+    padding: 1em; 
+    text-align: center;
+    margin-bottom: 20px; 
+  }
+  
+  nav a {
+    color: #fff; 
+    text-decoration: none; 
+    margin-right: 20px;
+    padding: 8px 16px;
+  }
+
+  nav a:hover {
+    padding: 8px 16px;
+    background-color: rgb(28, 28, 56);
+    border-radius: 15px;
+    border: 1px solid aliceblue;
+  }
+
+  nav a:active {
+    padding: 8px 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 1px solid rgb(11, 79, 138);
+    color: rgb(23, 19, 41);
+  }

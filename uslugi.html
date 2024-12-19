@@ -1,0 +1,289 @@
+```html
+<!-- Add a modal window for each service type -->
+<div id="modal" style="display: none;">
+    <span class="popup-close" onclick="closeModal()">&times;</span>
+    <div class="popup-content">
+        <h2 id="serviceType"></h2>
+        <form id="serviceForm">
+            <label for="name">Как вас зовут:</label>
+            <input type="text" id="name" placeholder="Например, Иванов Иван Иванович">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" placeholder="test@mail.ru">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" placeholder="+7 919 999 99 99">
+            <label for="country">Страна:</label>
+            <select id="country">
+                <option value="russia">Россия</option>
+            </select>
+            <label for="date">Дата:</label>
+            <input type="date" id="date">
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" placeholder="Введите ваш комментарий"></textarea>
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modify the card buttons to open the modal window -->
+<div class="card">
+    <img src="attache_850932921```html
+<!-- Add a modal window for each service type -->
+<div id="modal" style="display: none;">
+    <span class="popup-close" onclick="closeModal()">&times;</span>
+    <div class="popup-content">
+        <h2 id="serviceType"></h2>
+        <form id="serviceForm">
+            <label for="name">Как вас зовут:</label>
+            <input type="text" id="name" placeholder="Например, Иванов Иван Иванович" required>
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" placeholder="test@mail.ru" required>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" placeholder="+7 919 999 99 99" required>
+            <label for="country">Страна:</label>
+            <select id="country" required>
+                <option value="">Выберите страну</option>
+                <option value="russia">Россия</option>
+            </select>
+            <label for="date">Дата:</label>
+            <input type="date" id="date" required>
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" placeholder="Введите ваш комментарий"></textarea>
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modify the card buttons to open the modal window -->
+<div class="card">
+    <img src="attache_850932921.jpg" alt="Сайт-визитка">
+    <h2>Сайт-визитка</h2>
+    <button onclick="openModal('Сайт-визитка')">Заказать</button>
+</div>
+
+<div class="card">
+    <img src="corp-site.jpeg" alt="Корпоративный сайт">
+    <h2>Корпоративный сайт</h2>
+    <button onclick="openModal('Корпоративный сайт')">Заказать</button>
+</div>
+
+<div class="card">
+    <img src="large_8.jpeg" alt="Интернет-магазин">
+    <h2>Интернет-магазин</h2>
+    <button onclick="openModal('Интернет-магазин')">Заказать</button>
+</div>
+
+<script>
+    function openModal(serviceType) {
+        document.getElementById('modal').style.display = 'block';
+        document.getElementById('serviceType').innerText = serviceType;
+    }
+
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+
+    document.getElementById('serviceForm').onsubmit = function (event) {
+        event.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var country = document.getElementById('country').value;
+        var date = document.getElementById('date').value;
+
+        if (name && email && phone && country && date) {
+            alert('Форма успешно отправлена!');
+            closeModal();
+        } else {
+            alert('Пожалуйста, заполните все обязательные поля.');
+        }
+    };
+</script>
+```>
+
+<div class="card">
+    <img src="corp-site.jpeg" alt="Корпоративный сайт">
+    <h2>Корпоративный сайт</h2>
+    <button onclick="openModal('corp-site')">Заказать</button>
+</div>
+
+<div class="card">
+    <img src="large_8.jpeg" alt="Интернет-магазин">
+    <h2>Интернет-магазин</h2>
+    <button onclick="openModal('internet-magazin')">Заказать</button>
+</div>
+
+<!-- Remove the popup divs and their associated JavaScript functions -->
+```ml lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="Логотип" width="20px">
+        <div class="group-info">
+            <p>Группа ЭФБО-08-23</p>
+            <p>Пестов Ярослав Алексеевич</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="1.html">Главная</a>
+        <a href="second_pe.html">Первый семестр</a>
+        <a href="#">Второй семестр</a>
+        <a href="uslugi.html">Услуги</a>
+        <a href="#">Авторизация</a>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Навигация по странице</h3>
+            <ul>
+                <li><a href="#front">Фронтенд</a></li>
+                <li><a href="#back">Бэкенд</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h1>Разработка веб-приложений</h1>
+
+<div class="container">
+    <div class="card">
+        <img src="attache_850932921.jpg" alt="Сайт-визитка">
+        <h2>Сайт-визитка</h2>
+        <button onclick="openPopup('site-viZitka')">Заказать</button>
+        <div id="site-viZitka" class="popup">
+            <span class="popup-close" onclick="closePopup('site-viZitka')">&times;</span>
+            <div class="popup-content">
+                <h2>Заказать сайт-визитку</h2>
+                <label for="name">Как вас зовут:</label>
+                <input type="text" id="name" placeholder="Например, Иванов Иван Иванович">
+                <label for="email">Ваш e-mail:</label>
+                <input type="email" id="email" placeholder="test@mail.ru">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" placeholder="+7 919 999 99 99">
+                <label for="country">Страна:</label>
+                <select id="country">
+                    <option value="russia">Россия</option>
+                    </select>
+                <label for="date">Дата:</label>
+                <input type="date" id="date">
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" placeholder="Введите ваш комментарий"></textarea>
+                <button onclick="submitForm('site-viZitka')">Отправить заявку</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="corp-site.jpeg" alt="Корпоративный сайт">
+        <h2>Корпоративный сайт</h2>
+        <button onclick="openPopup('corp-site')">Заказать</button>
+        <div id="corp-site" class="popup">
+            <span class="popup-close" onclick="closePopup('corp-site')">&times;</span>
+            <div class="popup-content">
+                <h2>Заказать корпоративный сайт</h2>
+                <label for="name">Как вас зовут:</label>
+                <input type="text" id="name" placeholder="Например, Иванов Иван Иванович">
+                <label for="email">Ваш e-mail:</label>
+                <input type="email" id="email" placeholder="test@mail.ru">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" placeholder="+7 919 999 99 99">
+                <label for="country">Страна:</label>
+                <select id="country">
+                    <option value="russia">Россия</option>
+                    </select>
+                <label for="date">Дата:</label>
+                <input type="date" id="date">
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" placeholder="Введите ваш комментарий"></textarea>
+                <button onclick="submitForm('corp-site')">Отправить заявку</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="large_8.jpeg" alt="Интернет-магазин">
+        <h2>Интернет-магазин</h2>
+        <button onclick="openPopup('internet-magazin')">Заказать</button>
+        <div id="internet-magazin" class="popup">
+            <span class="popup-close" onclick="closePopup('internet-magazin')">&times;</span>
+            <div class="popup-content">
+                <h2>Заказать интернет-магазин</h2>
+                <label for="name">Как вас зовут:</label>
+                <input type="text" id="name" placeholder="Например, Иванов Иван Иванович">
+                <label for="email">Ваш e-mail:</label>
+                <input type="email" id="email" placeholder="test@mail.ru">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" placeholder="+7 919 999 99 99">
+                <label for="country">Страна:</label>
+                <select id="country">
+                    <option value="russia">Россия</option>
+                    </select>
+                <label for="date">Дата:</label>
+                <input type="date" id="date">
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" placeholder="Введите ваш комментарий"></textarea>
+                <button onclick="submitForm('internet-magazin')">Отправить заявку</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openPopup(popupId) {
+        document.getElementById(popupId).style.display = 'block';
+    }
+
+    function closePopup(popupId) {
+        document.getElementById(popupId).style.display = 'none';
+    }
+
+    function submitForm(popupId) {
+        // Здесь вы можете добавить код для отправки формы 
+        // на сервер или выполнить другие действия.
+        alert('Форма отправлена!');
+        closePopup(popupId);
+    }
+</script>
+        </section>
+    </div>
+
+     <footer>
+        &copy; Пестов Ярослав Алексеевич, 2024
+    </footer>
+
+    <script>
+        function openModal(serviceType) {
+            document.getElementById('modal').style.display = 'block';
+            document.getElementById('serviceType').value = serviceType;
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        document.getElementById('serviceForm').onsubmit = function (event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var country = document.getElementById('country').value;
+            var date = document.getElementById('date').value;
+
+            if (name && email && phone && country && date) {
+                alert('Форма успешно отправлена!');
+                closeModal();
+            } else {
+                alert('Пожалуйста, заполните все обязательные поля.');
+            }
+        };
+    </script>
+</body>
+
+</html>

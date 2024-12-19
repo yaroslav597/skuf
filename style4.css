@@ -1,0 +1,55 @@
+/* Основные стили для всех устройств */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для мобильных устройств (например, iPhone 12 Pro) */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none; /* Скрыть боковую панель на мобильных устройствах */
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 100%; /* Изображения будут адаптироваться по ширине */
+        height: auto;
+    }
+}
+
+/* Стили для планшетов (например, iPad Air) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    .card {
+        width: 45%; /* Две карточки в ряд */
+        margin: 20px;
+    }
+}

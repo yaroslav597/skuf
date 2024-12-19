@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="StyleUSLIGI.css">
+    <link rel="stylesheet" href="header.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <div id="top">
+            <img src="logo.png" alt="Логотип" width="70px">
+            <div class="group-info">
+                <p>Группа ЭФБО-08-23</p>
+                <p>Пестов Ярослав Алексеевич</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="SEMKI.html">Первый семестр</a>
+            <a href="#">Второй семестр</a>
+            <a href="uslugi.html">Услуги</a>
+            <a href="#">Авторизация</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Навигация по странице</h3>
+            <ul>
+                <li><a href="#front">Фронтенд</a></li>
+                <li><a href="#back">Бэкенд</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h1>Добро пожаловать на мой сайт</h1>
+            <p>Меня зовут Пестов Ярослав Алексеевич и&nbsp;я&nbsp;начинающий специалист по&nbsp;<nobr>веб-разработке
+                </nobr>.</p>
+                <div class="image-container">
+                    <img src="Я.png" alt="Вращающаяся фотография" width="75px" class="rotating-image">
+                </div>
+                <div id="primer"> 
+            <div id="primer">
+                <div id="front">
+                    <h2 class="qwerty">Фронтенд</h2>
+                    <p class="qwerty">Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в
+                        себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст.
+                        Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript,
+                        чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда —
+                        обеспечить удобство использования и эстетическую привлекательность.</p>
+                </div>
+                <video controls width="100%">
+                    <source src="кот2.mp4.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает тег video.
+                </video>
+                <div id="back">
+                    <h2>Бэкенд</h2>
+                    <p>Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных,
+                        управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки
+                        программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для
+                        создания логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и
+                        безопасность данных.</p>
+                </div>
+            </div>
+
+            <!-- Added Video Elements -->
+            <video controls width="100%" src="Кот1.mp4.mp4" type="video/mp4">
+            </video>
+            
+        </section>
+    </div>
+
+    <footer>
+        &copy; Пестов Ярослав Алексеевич, 2024
+    </footer>
+
+    <script>
+        function openModal(serviceType) {
+            document.getElementById('modal').style.display = 'block';
+            document.getElementById('serviceType').value = serviceType;
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        document.getElementById('serviceForm').onsubmit = function (event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var country = document.getElementById('country').value;
+            var date = document.getElementById('date').value;
+
+            if (name && email && phone && country && date) 
+                alert
